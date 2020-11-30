@@ -1,11 +1,9 @@
 const path = require("path");
 
 module.exports = {
-  mode: "development",
   entry: "./src/index.ts",
   output: {
     filename: "[name].bundle.js",
-    chunkFilename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
   module: {
@@ -18,6 +16,6 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js']
-  }
+    extensions: [".tsx", ".ts", ".js"],
+  },
 };
